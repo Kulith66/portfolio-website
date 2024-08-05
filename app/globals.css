@@ -2,12 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
- 
-
   body {
-    @apply border-border bg-primary text-black leading-loose;
+    @apply border-border bg-primary text-black leading-loose; /* Use custom class */
+  }
+  .h1{
+    @apply text-[28px] xl:text-[60px] leading-[1.1] font-semibold;
+  }
+  h2{
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+
+  }
+  h3{
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+
   }
 }
+.text-outline{
+  -webkit-text-stroke: 1px #ffffff;
+
+}
+.text-outline-hover{
+  -webkit-text-stroke: 1px #0e1ddc;
+
+}
+
+
+
